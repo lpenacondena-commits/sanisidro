@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>San Isidro La Espiga | Pollos a la Brasa & Parrillas en Ica</title>
+  <meta name="description" content="San Isidro La Espiga: pollos a la brasa, parrillas y platos a la carta en Ica, Perú.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="topbar">
+    <span>San Isidro La Espiga, Ica, Perú</span>
+    <a href="tel:+51000000000">Llámanos al: (056) 000 000</a>
+  </div>
+
+  <!-- Menú -->
+  <header class="header" id="header">
+    <a href="#inicio" class="logo" aria-label="San Isidro La Espiga">
+      <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+        <path d="M12 22V8"/>
+        <path d="M12 8c-2-1-3-3-3-5 2 1 3 3 3 5zM12 8c2-1 3-3 3-5-2 1-3 3-3 5z"/>
+        <path d="M12 13c-2-1-3-3-3-5M12 13c2-1 3-3 3-5M12 18c-2-1-3-3-3-5M12 18c2-1 3-3 3-5"/>
+      </svg>
+      <span class="logo-text"><strong>San Isidro</strong><small>La Espiga</small></span>
+    </a>
+
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#inicio" class="active">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#galeria">Galería</a>
+      <a href="#carta">La carta</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#reservas" class="btn btn-small">Reservar</a>
+    </nav>
+  </header>
+
+  <!-- HERO / FACHADA -->
+  <main>
+    <section class="hero" id="inicio">
+      <div class="slides" id="slides">
+        <div class="slide active" style="background-image:url('img/pollo-papas-1.jpg'); background-position:center 55%">
+          <div class="slide-content">
+            <p class="eyebrow">San Isidro La Espiga</p>
+            <h1>Pollos a la Brasa<br><em>&amp; Parrillas</em></h1>
+            <p class="lead">Sabor de casa, servido con cariño en el corazón de Ica.</p>
+          </div>
+        </div>
+        <div class="slide" style="background-image:url('img/fachada.jpg'); background-position:center 35%">
+          <div class="slide-content">
+            <p class="eyebrow">Restaurant · Ica, Perú</p>
+            <h1>Un lugar para<br><em>compartir en familia</em></h1>
+            <p class="lead">Te esperamos con los mejores platos y la atención de siempre.</p>
+          </div>
+        </div>
+        <div class="slide" style="background-image:url('img/pollo-papas-2.jpg'); background-position:center 60%">
+          <div class="slide-content">
+            <p class="eyebrow">Nuestra especialidad</p>
+            <h1>Crocante por fuera,<br><em>jugoso por dentro</em></h1>
+            <p class="lead">Pollo a la brasa con papas fritas, como debe ser.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#" class="btn" data-open-carta>Ver la carta</a>
+        <a href="#reservas" class="btn btn-outline">Reservar mesa</a>
+      </div>
+
+      <button class="arrow prev" id="prev" aria-label="Anterior">&#10094;</button>
+      <button class="arrow next" id="next" aria-label="Siguiente">&#10095;</button>
+      <div class="dots" id="dots" role="tablist" aria-label="Diapositivas"></div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="section about" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <p class="kicker">La familia San Isidro</p>
+          <h2>Servimos <em>cariño</em></h2>
+          <span class="divider"></span>
+          <p>En San Isidro La Espiga te recibimos con platos deliciosos y de primera calidad, en un lugar acogedor para venir con tu familia o tus amigos.</p>
+          <p>Nuestra especialidad son los pollos a la brasa y las carnes a la parrilla, pero también tenemos platos a la carta, como arroz chaufa y tallarín saltado, y postres para endulzar tu día. Te esperamos.</p>
+          <a href="#carta" class="btn">Conócenos</a>
+        </div>
+        <div class="about-img reveal">
+          <img src="img/fachada.jpg" alt="Fachada de San Isidro Restaurant" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="section gallery" id="galeria">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">Nuestras variedades</p>
+          <h2>Sabores de la casa</h2>
+          <span class="divider"></span>
+        </header>
+        <div class="grid">
+          <figure class="g-big reveal"><img src="img/pollo-papas-1.jpg" alt="Pollo a la brasa con papas fritas" loading="lazy"><figcaption>Pollo a la brasa</figcaption></figure>
+          <figure class="reveal"><img src="img/pollo-papas-2.jpg" alt="Pollo con papas fritas" loading="lazy"><figcaption>Papas fritas</figcaption></figure>
+          <figure class="reveal"><img src="img/parrilla.jpg" alt="Carnes a la parrilla" loading="lazy"><figcaption>Parrillas</figcaption></figure>
+          <figure class="g-wide reveal"><img src="img/fachada.jpg" alt="San Isidro Restaurant de noche" loading="lazy" style="object-position:center 30%"><figcaption>Nuestro local</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- LA CARTA -->
+    <section class="section parallax carta" id="carta" style="background-image:url('img/parrilla.jpg')">
+      <div class="parallax-box reveal">
+        <p class="kicker">Nuestras variedades</p>
+        <h2>La Carta</h2>
+        <span class="divider"></span>
+        <p>Pollos a la brasa, carnes a la parrilla, platos a la carta como arroz chaufa y tallarín saltado, y deliciosos postres para endulzar tu día.</p>
+        <a href="#" class="btn" data-open-carta>Ver la carta</a>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section class="section parallax experiencia" id="experiencia" style="background-image:url('img/pollo-papas-2.jpg')">
+      <div class="parallax-box reveal">
+        <p class="kicker">Inolvidable</p>
+        <h2>Experiencia</h2>
+        <span class="divider"></span>
+        <p>Estamos encantados de poder atenderte y tenerte con nosotros. Te esperamos con nuestros mejores platos y con el cariño de siempre.</p>
+        <a href="#reservas" class="btn">Reserva ahora</a>
+      </div>
+    </section>
+
+    <!-- RESERVAS -->
+    <section class="section reservas" id="reservas">
+      <div class="container narrow">
+        <header class="section-head reveal">
+          <p class="kicker">Reservación</p>
+          <h2>Reserva tu mesa</h2>
+          <span class="divider"></span>
+          <p>Encantados de poder tenerte con nosotros. Completa el formulario y te escribiremos por WhatsApp para confirmar.</p>
+        </header>
+        <form class="form reveal" id="reservaForm" novalidate>
+          <div class="field"><label for="nombre">Nombre</label><input id="nombre" required placeholder="Tu nombre"></div>
+          <div class="field"><label for="telefono">Teléfono</label><input id="telefono" type="tel" required placeholder="Tu número"></div>
+          <div class="field"><label for="personas">Personas</label><select id="personas"><option value="1">1 persona</option><option value="2">2 personas</option><option value="3">3 personas</option><option value="4">4 personas</option><option value="5">5 personas</option><option value="6">6 personas</option><option value="7">7 personas</option><option value="8">8 personas</option><option value="9">9 personas</option><option value="10">10 personas</option><option value="11">11 personas</option><option value="12">12 personas</option><option value="13">13 personas</option><option value="14">14 personas</option><option value="15">15 personas</option><option value="16">16 personas</option><option value="17">17 personas</option><option value="18">18 personas</option><option value="19">19 personas</option><option value="20">20 personas</option></select></div>
+          <div class="field"><label for="fecha">Fecha</label><input id="fecha" type="date" required></div>
+          <div class="field"><label for="hora">Hora</label><select id="hora"><option>12:00</option><option>12:30</option><option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option><option>18:00</option><option>18:30</option><option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option><option>21:30</option></select></div>
+          <div class="field full"><label for="notas">Pedidos especiales</label><textarea id="notas" rows="3" placeholder="Cumpleaños, alergias, mesa para niños..."></textarea></div>
+          <p class="form-error" id="formError" role="alert"></p>
+          <button type="submit" class="btn full">Reservar por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTACTO / FOOTER -->
+  <footer class="footer" id="contacto">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo footer-logo">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M12 22V8"/><path d="M12 8c-2-1-3-3-3-5 2 1 3 3 3 5zM12 8c2-1 3-3 3-5-2 1-3 3-3 5z"/><path d="M12 13c-2-1-3-3-3-5M12 13c2-1 3-3 3-5M12 18c-2-1-3-3-3-5M12 18c2-1 3-3 3-5"/></svg>
+          <span class="logo-text"><strong>San Isidro</strong><small>La Espiga</small></span>
+        </div>
+        <h3>Servimos cariño</h3>
+        <p>Pollos a la brasa, parrillas y platos a la carta para disfrutar en familia.</p>
+        <p class="contact-line">San Isidro La Espiga, Ica, Perú</p>
+        <p class="contact-line"><a href="tel:+51000000000">Llámanos: (056) 000 000</a></p>
+        <div class="social">
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="TripAdvisor">TripAdvisor</a>
+        </div>
+      </div>
+      <div>
+        <h3>Horario de atención</h3>
+        <p>Completa aquí los días y horas en que atiende el restaurante.</p>
+        <div class="hours"><strong>Almuerzo</strong><span>Lun a Dom · 12:00 a 15:00</span></div>
+        <div class="hours"><strong>Cena</strong><span>Lun a Dom · 18:00 a 23:00</span></div>
+      </div>
+      <div>
+        <h3>Ubícanos</h3>
+        <p>Reserva tu mesa online o llamando al número de contacto.</p>
+        <div class="hours"><strong>Ica</strong><span>(056) 000 000</span></div>
+        <a href="#reservas" class="btn btn-small">Reservar mesa</a>
+      </div>
+    </div>
+    <p class="copy">&copy; <span id="year"></span> San Isidro La Espiga. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Modal de la carta -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <button class="modal-close" id="modalClose" aria-label="Cerrar">&times;</button>
+    <img src="img/carta.jpg" alt="Carta de San Isidro Restaurant">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
